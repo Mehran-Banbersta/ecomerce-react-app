@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* styles.css */
+:root {
+  /* COLORS  */
+  /** ELEMENT COLORS **/
+  --primary-color: #eb5440;
+  --secondary-color: #4a4b4c;
+  --tertiary-color-1: #e8e8e8;
+  --tertiary-color-2: #c3c3c3;
+  --background-color-1: #f6f6f6;
+  --background-color-2: #ffffff;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* TEXT COLORS */
+  --text-primary: #000000;
+  --text-secondary: #4a4b4c;
+  --link-color: #067bc2;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  /* TYPOGRAPHY  */
+  /** FONT FAMILIES **/
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-open-sans: 'Open Sans', sans-serif;
 
-.App-link {
-  color: #61dafb;
-}
+  /* TYPOGRAPHY  */
+  /** FONT SIZES **/
+  --font-size-h1-desktop: 32px;
+  --font-size-h1-mobile: 18px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  --font-size-h2-desktop: 22px;
+  --font-size-h2-mobile: 14px;
+
+  --font-size-menu-active-desktop: 18px;
+
+  --font-size-buttons-desktop: 18px;
+  --font-size-buttons-mobile: 12px;
+
+  --font-size-back-button-desktop: 16px;
+
+  --font-size-input-title-desktop: 14px;
+  --font-size-input-title-mobile: 12px;
+
+  --font-size-menu-inactive-desktop: 18px;
+
+  --font-size-empty-state-desktop: 18px;
+  --font-size-empty-state-mobile: 14px;
+
+  /* TYPOGRAPHY */
+  /** FONT SIZES **/
+  --font-size-error-message-desktop: 14px;
+  --font-size-error-message-mobile: 12px;
+
+  --font-size-listing-information-desktop: 16px;
+  --font-size-listing-information-mobile: 12px;
+
+  --font-size-body-text-desktop: 18px;
+  --font-size-body-text-mobile: 12px;
+
+  --font-size-input-field-desktop: 14px;
+  --font-size-input-field-mobile: 12px;
 }
