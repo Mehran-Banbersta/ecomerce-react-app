@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   const [menu, setMenu] = useState('shop');
 
@@ -10,7 +12,10 @@ const Navbar = () => {
       {/* navbar-logo */}
       <div className="navbar-logo">
         <img src={logo} alt="" />
-        <p className="navbar-logo-name">ABOUT-YOU</p>
+        <Link className="link-style" to="/">
+          {' '}
+          <p className="navbar-logo-name">ABOUT-YOU</p>
+        </Link>
       </div>
       {/* navbar-menu */}
       <ul className="navbar-menu">
@@ -20,7 +25,11 @@ const Navbar = () => {
           }}
           className="navbar-menu-item"
         >
-          Shop{menu === 'shop' ? <hr /> : <></>}
+          <Link className="link-style" to="/">
+            {' '}
+            Shop
+          </Link>
+          {menu === 'shop' ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
@@ -28,7 +37,11 @@ const Navbar = () => {
           }}
           className="navbar-menu-item"
         >
-          Men {menu === 'mens' ? <hr /> : <></>}
+          <Link className="link-style" to="/mens">
+            {' '}
+            Men
+          </Link>{' '}
+          {menu === 'mens' ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
@@ -36,7 +49,11 @@ const Navbar = () => {
           }}
           className="navbar-menu-item"
         >
-          Women {menu === 'womens' ? <hr /> : <></>}
+          <Link className="link-style" to="/womens">
+            {' '}
+            women
+          </Link>
+          {menu === 'womens' ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
@@ -44,13 +61,22 @@ const Navbar = () => {
           }}
           className="navbar-menu-item"
         >
-          Kids {menu === 'kids' ? <hr /> : <></>}
+          <Link className="link-style" to="/kids">
+            {' '}
+            Kids
+          </Link>
+          {menu === 'kids' ? <hr /> : <></>}
         </li>
       </ul>
       {/* navbar-login-cart */}
       <div className="navbar-login-cart">
-        <button className="navbar-login-button">Login</button>
-        <img className="navbar-cart-img" src={cart_icon} alt="" />
+        <Link className="link-style" to="/login">
+          <button className="navbar-login-button">Login</button>
+        </Link>
+
+        <Link className="link-style" to="/cart">
+          <img className="navbar-cart-img" src={cart_icon} alt="" />
+        </Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>
