@@ -14,7 +14,7 @@
   flex: 1;
   flex-direction: column;
   line-height: 1;
-  margin-top: 7rem;
+  justify-content: center;
 }
 
 .hero-left h2 {
@@ -55,7 +55,8 @@
   margin-top: 1.2rem;
 }
 
-.hero-right {
+/*. hero-right */
+hero-right {
   display: flex;
   flex: 1;
   align-items: center;
