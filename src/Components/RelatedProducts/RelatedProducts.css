@@ -1,0 +1,8 @@
+.related-products-container {
+}
+
+.related-products-items {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
